@@ -10,7 +10,8 @@ This is similar to the -exec functionality available with the Linux find command
 Users can specify the directory on whose files commands must be run, whether execution statistics
 should be printed upon completion of the program, whether the commands on different files should be
 run in parallel, and whether hidden files (those starting with ".") should be included. Recursive
-functionality is not implemented. Wherever "{}" appears in the command pipeline, it will be replaced
+functionality is not implemented, and commands are run only on regular files (not directories or
+symbolic links). Wherever "{}" appears in the command pipeline, it will be replaced
 by the name of the file upon which the command pipeline is currently being executed.
 
 The command line arguments must be specified as follows:
