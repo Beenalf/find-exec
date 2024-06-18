@@ -18,7 +18,7 @@ The command line arguments must be specified as follows:
 Some example command lines are:
   ./uqfindexec
   ./uqfindexec --recurse
-  ./uqfindexec --directory .. "echo {}"
+  ./uqfindexec "echo {} | wc -c"
   ./uqfindexec --parallel --directory /etc --showhidden --recurse 'wc -l {}'
   ./uqfindexec --showhidden "tr a-z A-Z < {} > {}.out"
   ./uqfindexec --showhidden --directory /etc 'stat {} | grep "Change: 2023" | cut -d " " -f 2'
